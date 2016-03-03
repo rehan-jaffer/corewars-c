@@ -18,4 +18,8 @@
 #define LDP 0x26 // load from p-space (loads a number from private storage space)
 #define STP 0x27 // save to p-space (saves a number to private storage space)
 #define NOP 0x28 // no operation ( do nothing )
-
+// addressing modes
+#define IMMI 0x29 // immediate
+#define DIRE 0x30 // direct
+#define INDI 0x31 // indirect
+#define PRED 0x32 // predecrement
