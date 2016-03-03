@@ -6,6 +6,8 @@ struct instr {
   uint32_t opcode;
   uint32_t op1;
   uint32_t op2;
+  uint32_t op1_addr_mode;
+  uint32_t op2_addr_mode;
 };
 
 int main(int argc, char *argv) {
