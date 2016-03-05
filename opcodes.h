@@ -23,3 +23,4 @@
 #define DIRE 0x30 // direct
 #define INDI 0x31 // indirect
 #define PRED 0x32 // predecrement
+#define RELA 0x33 // relative
