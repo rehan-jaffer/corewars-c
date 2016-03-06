@@ -63,7 +63,7 @@ int main(int argc, char *argv) {
          break;
        }
 
-       switch(PTR_CURRENT.op2) {
+       switch(PTR_CURRENT.op2_addr_mode) {
          case IMMI:
            op2_addr = PTR_CURRENT.op2;
          break;
@@ -85,7 +85,7 @@ int main(int argc, char *argv) {
          case ADD:
          break;
          case MOV:
-           printf("MOV %d, %d\r\n", (*(core_p+i)).op1, (*(core_p+i)).op2);
+           printf("MOV %d (%d), %d (%d)\r\n", PTR_CURRENT.op1, op1_addr, PTR_CURRENT.op2, op2_addr);
            *((core_p)+op2_addr) = *((core_p)+op1_addr);
          break;
        }
